@@ -1,0 +1,453 @@
+@font-face{
+	font-family: roboto-bold;
+	src : url('../fonts/roboto-bold/roboto-bold.eot')
+	url('../fonts/roboto-bold/Roboto-Bold.svg')
+	url('../fonts/roboto-bold/Roboto-Bold.ttf')
+	url('../fonts/roboto-bold/Roboto-Bold.woff');
+	font-weight: normal;
+	font-style: normal;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;/*mila asiana anio foana
+	@zay fixe ny angezana div 
+	ohatra: width 52% de mijanona @io foana ny angezany na misy padding interieur;
+	*/
+}
+body {
+	font-size: 16px;
+	line-height: 46px
+	background-color: #000000;
+}
+h1 {
+	font-family: roboto-bold , sans-serif;
+	font-size: 35px;
+	margin-bottom: 25px;
+	color: #12a1f6;
+}
+#main-header {
+	height: 165px;
+	width: 100%;
+	position: absolute;
+	background-color: rgba(255, 255, 255, .8);
+}
+.container {
+	max-width: 980px;
+	margin: 0 auto;
+}
+.inner-top {
+	border-bottom: 1px solid black;
+}
+.inner-top ul {
+	width: 100%;
+	display: table;
+}
+.inner-top li {
+	display: table-cell;
+	vertical-align: middle;
+}
+.logo {
+	width: 45%;
+	max-width: 100%;
+}
+.logo img{
+	margin-top: 10px;
+}
+.tel {
+	float: center;
+	margin-top: 40px;
+}
+.tel a {
+	border: 2px solid #94c9f1;
+	padding: 5px 10px 5px 47px; 
+	background: url(../images/phone.png);
+	background-position: 10px center;
+	background-repeat: no-repeat;
+	border-radius: 50px;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+}
+.tel span {
+	font-weight: bold;
+	font-family: roboto-bold , sans-serif;
+	font-size: 26px;
+	color: #000000;
+}
+.client {
+	float: right;
+	margin-top: 40px;
+}
+.client a::before {
+	content: '';
+	background: url(../images/client.png);
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	margin-right: 5px;
+}	
+.client a{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: roboto-bold , sans-serif;
+	font-size: 23px;
+}
+.menu {
+	height: 50px;
+}
+.inner-menu {
+	margin: 7px 0px 7px 25px;
+}
+.nav {
+	width: 100%;
+	display: table;
+	position: relative;
+}
+.nav li {
+	display: table-cell;
+	vertical-align: middle;
+}
+.nav li a {
+	color: black;
+	text-decoration: none;
+	font-family: roboto-bold , sans-serif;
+	font-size: 17px;
+}
+.nav li a:hover {
+	color: #4ebdff;
+}
+.nav li:hover > ul.sub_menu {/*enfant direct > <a><ul>enfant direct</ul></a>*//*voisin ~* oh: <a></a><ul></ul>*/
+	opacity: 1;
+	visibility: visible;
+} 
+ul.sub_menu {
+	position: absolute;
+	text-align: left;
+	background-color: #ffffff;
+	line-height: 27px;
+	z-index: 9;
+	margin-top: 13px;
+	border-top: 5px solid #4ebdff;
+	opacity: 0;/*manakona le sub_menu*/
+	/*add transition*/
+	transition: all 400ms ease-in;
+	visibility: hidden;
+}
+ul.sub_menu ul.sub_menu {
+	left: 100%;
+	margin-top: -30px;
+	visibility: hidden;
+}
+ul.sub_menu li{
+	display: block;
+	width: 260px;
+}
+ul.sub_menu li a{
+	text-align: left;
+	font-weight: 400px;
+}
+.ban {
+	background: url(../images/banniere.jpg);
+	width: 100%;
+	height: 601px;
+	}/*atao background fon ny banniere*/ 
+.titre {
+	vertical-align: middle;
+	display: block;
+}
+.titre h3 {
+	top: 220px;
+	position: absolute;
+	text-align: right;
+	font-family: roboto-bold , sans-serif;
+	font-size: 45px;
+	text-transform: uppercase;
+	color: #12a1f6;
+}
+.titre span {
+	border-bottom: 5px solid #1b3f62;
+}
+.forme{
+	background-color: rgba(255, 255, 255, .5);
+	height: 215px;
+	max-width: 520px;
+	position: absolute;
+	top: 375px;
+	left: 30%;
+	padding: 10px 40px 10px 40px;
+	border-radius: 15px;
+}
+.forme b {
+	font-family: roboto-bold , sans-serif;
+	font-size: 20px;
+	text-align: center;
+	margin-left: 20%;
+}
+.forme span {
+	font-family: roboto-bold , sans-serif;
+	font-size: 16px;
+	margin-left: 15%;
+}
+.table input{
+	height: 35px;
+	margin-right: 15px;
+	width: 210px;
+}
+.nom_tel input {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.mail_cp input {
+	margin-bottom: 10px;
+}
+.type select{
+	height: 35px;
+	width: 210px;
+}
+.type button {
+	padding: 6px 56px;
+	font-size: 20px;
+	font-family: roboto-bold , sans-serif;
+	color: #ffffff;
+	background-color: #4ebdff;
+	border: 0;
+}
+.type button:hover{
+	background-color: #ffffff;
+	color: #4ebdff;
+}
+.content{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.text{
+	width: 54%;
+	text-align: left;
+	float: left;
+	display: block;
+	padding-right: 36px; 
+}
+.image span::before {
+	content: '';
+	background: url(../images/bfr_image.jpg);
+	background-repeat: no-repeat;
+	position: absolute;
+	height: 88%;
+	width: 100%;
+	left: 23px;
+	top: 61px;
+	display: inline-block;
+	z-index: -1;
+}
+.image {
+	float: left;
+	width: 46%;
+	position: relative;
+}
+.image span {
+	display: block;
+	/*satria izy mitondra anle aloka*/
+}
+.image img {
+  	margin-top: 30px;
+  	max-width: 100%;/*tokony atao any @rejet image*/
+}
+.image span::after {
+	content: '';
+	background: url(../images/ventillo.jpg);
+	height: 160px;
+	width:166px;
+	background-repeat: no-repeat;
+	display: block;
+	position: absolute;
+	bottom: -120px;
+	right: 95px;
+}
+.clear {
+	clear: both;
+}
+.intertitre h1{
+	font-family: roboto-bold , sans-serif;
+	font-size: 25px;
+	text-align: center;
+	margin-bottom:  10px;
+}
+.inner-info {
+	background-color: #f9f9f9;
+	height: 170px;
+	margin-bottom: 25px;	
+}
+.clearfix {
+	clear: both;
+}
+.zone_texte1 {
+	width: 50%;
+	margin-top: 15px;
+	float: left;
+}
+.zone_texte1 h1 {
+	text-align: center;
+	margin-bottom: 30px;
+	font: 25px/35px roboto-bold , sans-serif;
+	margin-left: 20%;
+}
+.zone_texte1 a {
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #12a1f6;
+	padding: 10px 30px;
+	font: 16px roboto-bold , sans-serif;
+	color: #ffffff;
+	margin-left: 40%;
+}
+.zone_image1 {
+	float: left;
+	width: 50%;
+}
+.zone_image1 img {
+	width: 100%;
+}
+.zone_texte2{
+	width: 50%;
+	margin-top: 15px;
+	float: left;	
+}
+.zone_texte2 h1 {
+	text-align: center;
+	margin-bottom: 30px;
+	font: 25px/35px roboto-bold , sans-serif;
+	margin-right: 32%;
+}
+.zone_texte2 a {
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #12a1f6;
+	padding: 10px 30px;
+	font: 16px roboto-bold , sans-serif;
+	color: #ffffff;
+	margin-left: 13%;
+}
+.inner-avantage {
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+.why {
+	text-align: center;
+}
+.why h1 {
+	color: #4ebdff;
+	font: 35px roboto-bold , sans-serif;
+	margin-bottom: 40px;
+}
+.picto {
+	width: 100%;
+}
+.picto ul{
+	list-style: none;
+	width: 100%;
+}
+.picto li {
+	vertical-align: middle;
+	display: inline-block;
+	margin-left: 7%;
+}
+.picto li img {
+	margin-left: 7%;
+	margin-bottom: 15px;
+	background: #f7f7f7;
+	padding: 25px;
+	border-radius: 20px;
+	box-shadow: 5px 5px 0 #4ebdff;
+}
+.facture {
+	background: url(../images/ban3.jpg);
+	height: 148px;
+	width: 100%;
+}
+.fact {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.fact h1 {
+	text-align: center;
+	margin-bottom: 20px;
+	font: 33px roboto-bold , sans-serif;
+	color: #ffffff;
+}
+.fact p {
+	text-align: center;
+	font: 24px roboto-bold , sans-serif;
+	color: #ffffff;
+}
+.footer {
+	background: url(../images/img_footer.jpg);
+	height: 397px;
+	width: 100%;
+	padding-top: 50px;
+}
+.coo_serv {
+	width: 50%;
+	float: left;
+	display: inline-block;
+}
+.coordonne {
+	font-family: roboto-bold , sans-serif;
+	color: #ffffff;
+	float: left;
+	width: 50%;
+}
+.coordonne h1 {
+	font-size: 16px;
+	margin-bottom: 25px;
+}
+.coordonne li {
+	font-size: 14px;
+	list-style: none;
+	margin-bottom: 15px;
+}
+.service {
+	font-family: roboto-bold , sans-serif;
+	color: #ffffff;
+	float: left;	
+}
+.service h1 {
+	font-size: 16px;
+	margin-bottom: 25px;
+}
+.service li {
+	font-size: 14px;
+	list-style: none;
+	margin-bottom: 10px;
+}
+.filtro {
+	width: 50%;
+	float: left;	
+}
+.infiltrometrie {
+	font-family:roboto-bold , sans-serif;
+	color: #ffffff;		
+}
+.infiltrometrie h1 {
+	font-size: 16px;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+}
+.infiltrometrie span {
+	color: #4ebdff;
+}
+.infiltrometrie p {
+	font-size: 14px;
+	line-height: 25px;
+}
+.pied_midex {
+
+}
+@media screen and (max-width: 1024px){
+	.tel span {
+		display: none !important;
+	}
+}
